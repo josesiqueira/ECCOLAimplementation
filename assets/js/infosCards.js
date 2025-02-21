@@ -7,13 +7,13 @@ const infosCards = [
       " In order to understand the big picture, it is important to first understand who the system can affect and how. Try to also think past the obvious, direct stakeholders such as your end-users.",
     whatToDo: [
       "Identify stakeholders.",
-      "Who does the system affect and how? Stakeholders are not simply users, developers and customers.",
+      "Who does the system affect and how? Stakeholders are not simply users, developers, and customers.",
       "How are the various stakeholders linked together?",
       "Can these different stakeholders influence the development of the system? How?",
-      "Remember that a user is ofthen an organization and the end-user is an individual. Similarly, AI systems can treat people as objects for data colection.",
+      "Remember that a user is often an organization and the end-user is an individual. Similarly, AI systems can treat people as objects for data collection.",
     ],
     praticalExample:
-      "Autonomous cars don't just affect their passengers. Anyone mearby is affected; some even change the way they drive. If at one point half of the traffic consists of selt-driving cars, what are the societal impacts of such systems? E.g., how are the people who can't afford one affected? Regulations arising from such systems are also affect everyone."
+      "Autonomous cars don't just affect their passengers. Anyone nearby is affected; some even change the way they drive. If at one point half of the traffic consists of self-driving cars, what are the societal impacts of such systems? E.g., how are the people who can't afford one affected? Regulations arising from such systems also affect everyone."
   },
   {
     number: "1",
@@ -42,26 +42,26 @@ const infosCards = [
       "Is explainability a goal for your system? How do you plan to ensure it?",
       "How well can each decision of the system be understood? By both developers and (end-)users?",
       "Did you try to use the simplest and most interpretable model possible for the context?",
-      "Did you made trade-offs between explainability and accuracy? What kind of? Why?",
+      "Did you make trade-offs between explainability and accuracy? What kind of? Why?",
       "How familiar are you with your training or testing data? Can you change it when needed?",
-      "If you utilize third party components in the system, how well do you understand them?",
+      "If you utilize third-party components in the system, how well do you understand them?",
     ],
     praticalExample:
-      'When interacting with a robot, users could ideally ask the robot "why did you do that?" and receive and understandable response. This would make it much easier for them to trust a system.',
+      'When interacting with a robot, users could ideally ask the robot "Why did you do that?" and receive an understandable response. This would make it much easier for them to trust a system.',
   },
   {
     number: "3",
     type: "Transparency",
     title: "Communication",
     motivation:
-      "In practice, communication is a big part of being transparent with your stakeholders. Being transparent in communication can generate trust.",
+      "In practice, communication is a big part of transparency with your stakeholders. Being transparent in communication can generate trust.",
     whatToDo: [
       "Ask yourself:",
       "What is the goal of the system? Why is this particular system deployed in this specific area?",
       "What do you communicate about the system to its users and end-users? Is it enough for them to understand how the system works?",
       "If relevant to your system, do you somehow tell your (end-)users that they are interacting with an AI system and not with another human being?",
       "Do you collect user feedback? How is it used to change/improve the system?",
-      "Are communication and transparency towards other audences, such as the general public, relevant?",
+      "Are communication and transparency towards other audiences, such as the general public, relevant?",
     ],
     praticalExample:
       "Clearly stating what data you collect and why can make you seem much more trustworthy. Compare this to a cellphone application that just states it needs to access your camera and storage.",
@@ -78,7 +78,7 @@ const infosCards = [
       "Who decides on such trade-offs (e.g. between two competing solutions) and how? Did you ensure that the trade-off decision and the reasons behind it were documented?",
     ],
     praticalExample:
-      "Documenting trade-offs can improve your customer relationship, allowing you to better explain why certain decisions were amde over others. Moreover, it can reduce the responsability placed on the individual developer(s) from an ethical point of view.",
+      "Documenting trade-offs can improve your customer relationship, allowing you to better explain why certain decisions were made over others. Moreover, it can reduce the responsibility placed on the individual developer(s) from an ethical point of view.",
   },
   {
     number: "5",
@@ -87,13 +87,13 @@ const infosCards = [
     motivation:
       "Traceability supports explainability. It helps us understand why the AI acts the way it does.",
     whatToDo: [
-      "Document different types of documentation (code, project etc.) are typically key in producing transparency.",
+      "Document different types of documentation (code, project, etc.) are typically key in producing transparency.",
       "How have you documented the development of the system, both in terms of code and decision-making? How was the model built or the AI trained?",
-      "How have you documented the testing and validation process? Interms of data and scenarios used etc.",
+      "How have you documented the testing and validation process? In terms of data and scenarios used etc.",
       "How do you document the actions of the system? What about alternate actions(e.g. if the user was different but the situation otherwise the same)?",
     ],
     praticalExample:
-      "Whe the system starts making mistakes, by aiming for traceability, it will be easier to find out the cause. Consequently, it will also be faster anf possibly easier to find out the cause. Consequently, it will also be faster and possibly easier to start fixing the underlying issue.",
+      "When the system starts making mistakes, by aiming for traceability, it will be easier to find out the cause. Consequently, it will also be faster and possibly easier to find out the cause. Consequently, it will also be faster and possibly easier to start fixing the underlying issue.",
   },
   {
     number: "6",
@@ -104,42 +104,42 @@ const infosCards = [
     whatToDo: [
       "Ask yourself:",
       "How do you test if the system fulfills its goals?",
-      "ave you tested the system comprehensively, inclusding unlikely scenarios? Have the tests been documented?",
+      "Have you tested the system comprehensively, including unlikely scenarios? Have the tests been documented?",
       "When the system fails in a certain scenario, will you be able to tell why? Can you replicate the failure?",
       "How do you assure the (end-)user of the system's reliability?",
     ],
     praticalExample:
-      "An autonomous coffee machine successfully brews coffee 8 times out 10. While this is a decent success rate, we are left wondering what happened the 2 times it failed to do so, and why. Erros are inevitable, but we must understand the causes behind them and be able to replicate them to fix them.",
+      "An autonomous coffee machine successfully brews coffee 8 times out 10. While this is a decent success rate, we are left wondering what happened the 2 times it failed to do so, and why. Errors are inevitable, but we must understand the causes behind them and be able to replicate them to fix them.",
   },
   {
     number: "7",
     type: "Data",
     title: "Privacy and Data",
     motivation:
-      " Privacy is a rising trend in the wake of various recent data missue reveals. People are now increasingly conscious about handing out personal data. Similarly, regulations such as GDPR now affect data collection.",
+      " Privacy is a rising trend in the wake of various recent data misuse reveals. People are now increasingly conscious about handing out personal data. Similarly, regulations such as GDPR now affect data collection.",
     whatToDo: [
       "Ask yourself:",
       "What data are used by the system?",
       "Does the system use or collect personal data? Why? How is the personal data used?",
-      "Do you clearly inform your (end-)users about any personal data collection? E.g., asj for consent, provide an opportunity to revoke it etc.",
+      "Do you clearly inform your (end-)users about any personal data collection? E.g., ask for consent, provide an opportunity to revoke it, etc.",
       "Have you taken measures to enhance (end-user) privacy, such as encryption or anonymization?",
       "Who makes the decisions regarding data use and collection? Do you have organizational policies for it?",
     ],
     praticalExample:
-      "Rather than collection and selling data, appealling yo privacy can also be profitable. Regulations are making it increasingly difficult to collect lots of personal data for profit. Privacy can be an alternate selling point in today's climate.",
+      "Rather than collection and selling data, appealing to privacy can also be profitable. Regulations are making it increasingly difficult to collect lots of personal data for profit. Privacy can be an alternate selling point in today's climate.",
   },
   {
     number: "8",
     type: "Data",
     title: "Data Quality",
     motivation:
-      "As AI are trained using data, the data used directly affects how the system operates. Both the nature and the quality and integrity of the data used has to align with goals of the system.",
+      "As AI is trained using data, the data used directly affects how the system operates. Both the nature and the quality and integrity of the data used has to align with goals of the system.",
     whatToDo: [
       "Ask yourself:",
       "What are good or poor quality data in the context of your system?",
       "How do you evaluate the quality and integrity of your own data? Are there alternative ways?",
       "If you utilize data from external sources, how do you control their quality?",
-      "Did you align yout system with relevant standards (for example ISO, IEEE) or widely adopted protocols for daily data management and governance?",
+      "Did you align your system with relevant standards (for example ISO, IEEE) or widely adopted protocols for daily data management and governance?",
       "How can you tell if your data sets have been hacked or otherwise compromised?",
     ],
     praticalExample:
@@ -150,27 +150,27 @@ const infosCards = [
     type: "Data",
     title: "Access to Data",
     motivation:
-      "Aside from carefully planning what data you colect and how it is also important to plan how it can or will be used and by whom.",
+      "Aside from carefully planning what data you collect and how it is also important to plan how it can or will be used and by whom.",
     whatToDo: [
       "Ask yourself:",
-      "Who can access the users'data, and under what circumstances?",
-      "How do you ensure that the people who access the data: 1) have a valid reason to do so. and 2) adhere to the regulations and policies related to data?",
+      "Who can access the users' data, and under what circumstances?",
+      "How do you ensure that the people who access the data: 1) have a valid reason to do so and 2) adhere to the regulations and policies related to data?",
       "Do you keep logs of who accesses the data and when? Do the logs also tell why?",
       "Do you use existing data governance frameworks or protocols? Does your organization have its own?",
-      "Who handles the data collection, storage and use?",
+      "Who handles the data collection, storage, and use?",
     ],
     praticalExample:
-      "Third parties you give access to the data can misuse it. A prominent example of this is the case of Cambridge Analytica and Facebook, in which data from FAcebook was used questionably. However, such incidents can also paint your organization in a bad way.",
+      "Third parties you give access to the data can misuse it. A prominent example of this is the case of Cambridge Analytica and Facebook, in which data from Facebook was used questionably. However, such incidents can also paint your organization in a bad way.",
   },
   {
     number: "10",
     type: "Agency & Oversight",
     title: "Human Agency",
     motivation:
-      "People interacting with the system or using it shoud be able to undersand it sufficiently. Users should be able to make informed decisions based on its suggestions, or to challenge its suggestions. AI systems should let humans make independent choices.",
+      "People interacting with the system or using it should be able to understand it sufficiently. Users should be able to make informed decisions based on the system's suggestions or to challenge its suggestions. AI systems should let humans make independent choices.",
     whatToDo: [
-      "Does the system interact with decisions by human actors, i.e. end users (e.g. recommending users actions or decisions, or presenting options)?",
-      "Does the system communicate to its (end) users that a decision, content or outcome is the result of an algorithmic decision? Into how much detail does it go?",
+      "Does the system interact with decisions by human actors, i.e. end users (e.g. recommending users' actions or decisions, or presenting options)?",
+      "Does the system communicate to its (end) users that a decision, content, or outcome is the result of an algorithmic decision? Into how much detail does it go?",
       "In the system`s use context, what tasks are done by the system and what tasks are done by humans?",
       "Have you taken measures to prevent overconfidence or overreliance on the system?",
     ],
@@ -182,12 +182,12 @@ const infosCards = [
     type: "Agency & Oversight",
     title: "Human Oversight",
     motivation:
-      "AI systems shoud support human decision-making. They shoud not undermine human autonomy by making decisions for us, meaning they shoud be subject to human oversight.",
+      "AI systems should support human decision-making. They should not undermine human autonomy by making decisions for us, meaning they should be subject to human oversight.",
     whatToDo: [
       "Ask yourself:",
       "Who can control the system and how? In what situations?",
-      "What would be the appropriate level of huan control for this particular system an its use cases?",
-      "Related to the Safety and Security cards: how do you detect and respond if something goes wrong? Does the system then stop entirely, partially, or would control be delegated to a human? Why?",
+      "What would be the appropriate level of human control for this particular system and its use cases?",
+      "Related to the Safety and Security cards: how do you detect and respond if something goes wrong? Does the system then stop entirely, or partially, or would control be delegated to a human? Why?",
     ],
     praticalExample:
       "Assuming control is especially related to cyber-physical systems such as drones or other vehicles. For purely digital systems, the focus should be on supporting human decision-making instead of directing it.",
@@ -202,11 +202,11 @@ const infosCards = [
       "Ask yourself:",
       "Did you assess potential forms of attacks to which the system could be vulnerable? Did you consider ones that are unique or more relevant to AI systems?",
       "Did you consider different types of vulnerabilities, such as data pollution and physical infrastructure?",
-      "Have you verified how your systems behaves in unexpected situations and environments?",
+      "Have you verified how your systems behave in unexpected situations and environments?",
       "Does your organization have cybersecurity personnel? Are they involved in this system?",
     ],
     praticalExample:
-      "The autonomous nature of AI systems makes new vectos of attack possible. A white line drawn across a road can confuse a self-driving vehicle. What happened to Microsoft's Tay Twitter bot is another example of a new type of attack.",
+      "The autonomous nature of AI systems makes new vectors of attack possible. A white line drawn across a road can confuse a self-driving vehicle. What happened to Microsoft's Tay Twitter bot is another example of a new type of attack.",
   },
   {
     number: "13",
@@ -219,25 +219,25 @@ const infosCards = [
       "What kind of risks does the system involve? What kind of damage could it cause?",
       "How do you measure and assess risks and safety?",
       "In what conditions do the fallback plans trigger? Are they automatic or do they require human input?",
-      "Is there a plan to mitigate or manage technological errors, accidnts, or malicious misuse? What if the systems provides wrong results, becomes unavailable, or provides societally unacceptable results?",
+      "Is there a plan to mitigate or manage technological errors, accidents, or malicious misuse? What if the systems provide wrong results, become unavailable, or provide societally unacceptable results?",
       "What liability and consumer protection laws apply to your system? Have you taken them into account?",
     ],
     praticalExample:
-      "AI systems can aid automating various organizational tasks, making it possible to reduce personnel. However, if a customer organization becomes reliant on your AI system to handle a portion of its operations, what happens if that AI stops functioning for even a few days? What could you do to alleviate the impact?",
+      "AI systems can aid in automating various organizational tasks, making it possible to reduce personnel. However, if a customer organization becomes reliant on your AI system to handle a portion of its operations, what happens if that AI stops functioning for even a few days? What could you do to alleviate the impact?",
   },
   {
     number: "14",
     type: "Fairness",
-    title: "Accessbility",
+    title: "Accessibility",
     motivation:
-      "Technology can be discriminatin in various ways. Given the enormous impact AI systems can have, ensuring equal access to their positive impacts is ethically important.",
+      "Technology can be discriminating in various ways. Given the enormous impact AI systems can have, ensuring equal access to their positive impacts is ethically important.",
     whatToDo: [
       "Ask yourself:",
       " Does the system consider a wide range of individual preferences and abilities? If not, why?",
       "Is the system usable by those with special needs or disabilities, those at risk of exclusion, or those using assistive technologies?",
       "Were people representing various groups somehow involved in the development of the system?",
       "How is the potential user audience taken into account?",
-      "Is the team involved in building the sustem representative of your largel user audience? Is it representative of the general population?",
+      "Is the team involved in building the system representative of your larger user audience? Is it representative of the general population?",
       "Did you assess whether there could be (groups of) people?",
     ],
     praticalExample:
@@ -248,7 +248,7 @@ const infosCards = [
     type: "Fairness",
     title: "Stakeholder Participation",
     motivation:
-      "As AI systems have notable impacts, they stakeholders are also numerous. Though the system affects these various holders in various ways, they are often not involved in the development. Yet, e.g. when using a decision-making system, its users have to trust the system while also being critical of it.",
+      "As AI systems have notable impacts, their stakeholders are also numerous. Though the system affects these various holders in various ways, they are often not involved in the development. Yet, e.g. when using a decision-making system, its users have to trust the system while also being critical of it.",
     whatToDo: [
       "Turn to your stakeholder analysis (card #0):",
       "Which stakeholders are stakeholders in system development?",
@@ -271,17 +271,17 @@ const infosCards = [
       "Did you ensure measures to reduce the environmental impact of your system's life cycle?",
     ],
     praticalExample:
-      "If you are hosting on a third party cloud, try to ascertain the systainability of the service provider's services. If you are using hardware, are you processing the data in each physical device of your own or are you processing it in the cloud?",
+      "If you are hosting on a third-party cloud, try to ascertain the sustainability of the service provider's services. If you are using hardware, are you processing the data in each physical device of your own or are you processing it in the cloud?",
   },
   {
     number: "17",
     type: "Wellbeing",
     title: "Societal Effects",
     motivation:
-      "The impacts a system has go beyond its userbase. A system may well affect negatively even those who do net use it nor wish to use it.",
+      "The impacts a system has go beyond its user base. A system may well affect negatively even those who do not use it nor wish to use it.",
     whatToDo: [
       "Ask yourself:",
-      "Did you assess the brader societal impact of the AI system's use beyond the individual (end-)users? Consider stakeholders who might be indirectly affected by the system. ",
+      "Did you assess the broader societal impact of the AI system's use beyond the individual (end-)users? Consider stakeholders who might be indirectly affected by the system. ",
       "How will the systems affect society when in use?",
       "What kind of systemic effects could the system have?",
     ],
@@ -299,7 +299,7 @@ const infosCards = [
       "Is the system auditable?",
       "Can an audit be conducted independently?",
       "Is the system available for inspection?",
-      "What mechanisms facilitate the system's auditability? How is traceability and logging of the systems's processess and outcomes ensured?",
+      "What mechanisms facilitate the system's audibility? How are traceability and logging of the systems's processes and outcomes ensured?",
     ],
     praticalExample:
       "In heavily regulated fields such as medicine, audits are typically required before a system can be utilized in the first place. ",
@@ -312,12 +312,12 @@ const infosCards = [
       "Making sure people know they can be compensated in some way in the event something goes wrong with the system is important in generating trust. Such scenarios should be planned in advance to what extent possible.",
     whatToDo: [
       "Ask yourself:",
-      "What is your (developer organization) responsability if the system causes damage or otherwise has a negative impact?",
-      "In the event of negative impact, can the ones affected seek responsability?",
+      "What is your (developer organization) responsibility if the system causes damage or otherwise has a negative impact?",
+      "In the event of negative impact, can the ones affected seek responsibility?",
       "How do you inform users and other third parties about opportunities for redress?",
     ],
     praticalExample:
-      "AI systems can inconvenience users in unforeseen, unpredictable ways. Depending on the situation, the company may or may not be legally responsible for the inconvenience. Noetheless, by offering a digital platform for seeking refress, your company can seem more trustworthy while also offering additional value to your users.",
+      "AI systems can inconvenience users in unforeseen, unpredictable ways. Depending on the situation, the company may or may not be legally responsible for the inconvenience. Nonetheless, by offering a digital platform for seeking refresh, your company can seem more trustworthy while also offering additional value to your users.",
   },
   {
     number: "20",
@@ -333,8 +333,8 @@ const infosCards = [
       "Have you discussed redress issues? {Card #19}",
       "Are the people involved with the development of the system also involved with the development of the system also involved with it during its operational life? If not, they may not feel as accountable.",
       "Are you aware of laws related to the system?",
-      "Can users of the system somehow report volnerabilities, risks and other issues in the system?",
-      "  With whom have you discused accountability and other ethical?",
+      "Can users of the system somehow report vulnerabilities, risks, and other issues in the system?",
+      "  With whom have you discussed accountability and other ethical?",
     ],
     praticalExample: "",
   },
